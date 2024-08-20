@@ -1,0 +1,58 @@
+/* TAGS */
+body {
+    background-color: #1D1D35;
+    color: #EBEEFF;
+
+    margin: 8px 25px 8px 25px;
+    padding: 6px;
+    border: 10px solid rgba(113, 117, 151, 0.3);
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header, table, tr, td, a {
+    margin: auto;
+    padding-left: 3px;
+    color: #EBEEFF;
+}
+
+input {
+    border-radius: 10px;
+    background-color: #EBEEFF;
+}
+
+button {
+    border: 1px solid #005F9D;
+    border-radius: 10px;
+    background-color: #3461C4;
+    color: #EBEEFF;
+}
+
+textarea {
+    background-color: #EBEEFF;
+}
+
+
+/* CLASSES */
+.container_1 {
+    display: flex;
+}
+
+.section_image {
+    filter: hue-rotate(100deg);
+}
+
+
+
+/* IDs */
+#contato {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+
+    max-width: fit-content;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 10px 30px 20px 30px;
+
+    background-color: hsl(240, 29%, 25%);
+}
