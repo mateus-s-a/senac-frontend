@@ -1,0 +1,67 @@
+/* VARIABLES */
+:root {
+    --background-color: #1D1D35;
+    --text-color: #EBEEFF;
+    --border-color: rgba(113, 117, 151, 0.3);
+    --button-background: #3461C4;
+    --button-border: #005F9D;
+    --textarea-background: #EBEEFF;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 8px 25px;
+    padding: 25px;
+    border: 10px solid var(--border-color);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header, table, tr, td, a {
+    margin: auto;
+    padding-left: 3px;
+    color: var(--text-color);
+}
+
+input, textarea {
+    border-radius: 10px;
+    background-color: var(--textarea-background);
+}
+
+button {
+    border: 1px solid var(--button-border);
+    border-radius: 10px;
+    background-color: var(--button-background);
+    color: var(--text-color);
+}
+
+/* CLASSES */
+.container {
+    display: flex;
+    max-width: fit-content;
+}
+
+.book img {
+    transition: transform 0.3s, opacity 0.3s; /* Smooth transition */
+}
+
+.book:hover img {
+    transform: scale(1.025); /* Scale up image */
+    opacity: 0.9; /* Adjust opacity */
+}
+
+.section_image {
+    filter: hue-rotate(100deg);
+}
+
+/* IDs */
+#contato {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    max-width: fit-content;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 10px 30px;
+    background-color: hsl(240, 29%, 25%);
+}
