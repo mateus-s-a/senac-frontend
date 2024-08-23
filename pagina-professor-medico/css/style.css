@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 10px 5%;
+    margin: 0 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: #f8f8f8;
+}
+
+header {
+    text-align: center;
+    background-color: #e9e9e9;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+input, textarea {
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px;
+    border: 2px solid #ccc;
+    resize: none;
+}
+
+button {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #228693;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #075061;
+}
+
+footer {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0; /* Espaçamento superior e inferior nos cards */
+    padding-top: 50px
+}
+
+.card {
+    background: #fff;
+    margin: 10px;
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: rgb(16, 153, 187);
+}
+
+.card-img {
+    border-radius: 10px;
+}
+
+.card-figcaption {
+    font-size: small;
+    padding-bottom: 15px;
+}
+
+.main_figure {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.main-img {
+    width: 100%; /* Alterado para 100% para responsividade */
+    height: auto;
+    border-radius: 20px;
+}
+
+.agendamento {
+    padding-bottom: 20px;
+    border: 2px solid #075061;
+    border-radius: 20px;
+}
+
+.agendamento-titulo {
+    text-align: center;
+    margin: 15px 0 10px 0;
+}
+
+.agendamento-conteudo {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se ajustem */
+}
+
+.agendamento-conteudo-item {
+    flex: 1 1 50%; /* Cada item ocupa 50% do espaço */
+    padding: 10px;
+    padding: 0 50px 0 50px;
+}
+
+h2 {
+    padding-top: 10px;
+    color: #437994;
+}
+
+.agendamento-img {
+    width: 80%; /* Responsivo */
+    height: auto; /* Mantém a proporção */
+}
+
+.mb-3-item {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 20px); /* 2 cards por linha */
+    }
+
+    .agendamento-conteudo-item {
+        flex: 1 1 100%; /* Item ocupa 100% em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%; /* Card ocupa 100% em telas muito pequenas */
+    }
+}
