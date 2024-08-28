@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Oxygen", sans-serif;
 }
 
 body {
@@ -13,21 +16,51 @@ body {
     background-color: #f8f8f8;
 }
 
+/* Header */
 header {
-    text-align: center;
-    background-color: #e9e9e9;
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-nav {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+    padding: 2svh 5%;
+    margin: 0 auto;
+    background-color: #64c9d6;
+    border-radius: 10px;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.25);
+    gap: 2rem; /* adjusted for better spacing */
 }
 
-input, textarea {
+header h1 {
+    font-size: 2.25rem;
+    text-align: center;
+    width: 100%;
+}
+
+/* Navigation */
+header nav {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.35em;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(230, 240, 240);
+    padding: 0 1rem;
+    transition: color 0.2s ease, background-color 0.2s ease; /* combine transition properties */
+}
+
+nav a:hover {
+    color: #075061;
+    background-color: #b4dbe0;
+    border-radius: 10px;
+}
+
+/* Form Elements */
+input, 
+textarea {
     background-color: whitesmoke;
     width: 100%;
     padding: 12px 20px;
@@ -59,34 +92,39 @@ button:hover {
     background-color: #075061;
 }
 
+/* Footer */
 footer {
     text-align: center;
+    padding-top: 4rem;
 }
 
+/* Card Container */
 .card-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px 0; /* Espaçamento superior e inferior nos cards */
-    padding-top: 50px
+    flex-wrap: wrap; 
+    margin: 20px 0; 
+    padding-top: 50px;
 }
 
 .card {
     background: #fff;
     margin: 10px;
-    flex: 1 1 calc(33.33% - 20px);
-    max-width: 300px;
+    width: 300px; /* fixed width for the card */
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* prevents overflow issues */
 }
 
 .card h3 {
     color: rgb(16, 153, 187);
 }
 
-.card-img {
+.card-img, 
+.main-img {
     border-radius: 10px;
+    max-width: 100%; /* set max-width for responsiveness */
 }
 
 .card-figcaption {
@@ -94,17 +132,12 @@ footer {
     padding-bottom: 15px;
 }
 
+/* Main Content */
 .main_figure {
     width: 80%;
     max-width: 600px;
     margin: 0 auto;
     padding: 20px 0;
-}
-
-.main-img {
-    width: 100%; /* Alterado para 100% para responsividade */
-    height: auto;
-    border-radius: 20px;
 }
 
 .agendamento {
@@ -115,18 +148,17 @@ footer {
 
 .agendamento-titulo {
     text-align: center;
-    margin: 15px 0 10px 0;
+    margin: 15px 0 10px;
 }
 
 .agendamento-conteudo {
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens se ajustem */
+    flex-wrap: wrap; 
 }
 
 .agendamento-conteudo-item {
-    flex: 1 1 50%; /* Cada item ocupa 50% do espaço */
-    padding: 10px;
-    padding: 0 50px 0 50px;
+    flex: 1 1 50%; 
+    padding: 0 50px;
 }
 
 h2 {
@@ -135,8 +167,8 @@ h2 {
 }
 
 .agendamento-img {
-    width: 80%; /* Responsivo */
-    height: auto; /* Mantém a proporção */
+    width: 80%;
+    height: auto;
 }
 
 .mb-3-item {
@@ -144,21 +176,58 @@ h2 {
     justify-content: center;
 }
 
+.container-1-texto {
+    padding-top: 2rem;
+    text-align: center;
+    background-color: darkblue;
+    color: yellow;
 
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
+}
 
-/* Media Queries para responsividade */
+.container-1-texto h1 {
+    padding-bottom: 1rem;
+}
+
+.container-1-texto p {
+    text-align: justify;
+    letter-spacing: .125rem;
+    padding: 0 3rem 2rem 3rem;
+}
+
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .card {
-        flex: 1 1 calc(50% - 20px); /* 2 cards por linha */
+    header {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1rem;
     }
-
-    .agendamento-conteudo-item {
-        flex: 1 1 100%; /* Item ocupa 100% em telas menores */
+    header h1 {
+        font-size: 2rem;
+    }
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .card-container {
+        justify-content: space-around; /* adjust for spacing when at fixed width */
     }
 }
 
 @media (max-width: 480px) {
-    .card {
-        flex: 1 1 100%; /* Card ocupa 100% em telas muito pequenas */
+    header {
+        padding: 1rem;
+        gap: 1rem;
+        justify-content: center;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    nav {
+        flex-direction: column;
+        font-size: 1em;
+        gap: 5px;
     }
 }
