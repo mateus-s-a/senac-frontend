@@ -11,29 +11,44 @@
 body {
     padding: 10px 5%;
     margin: 0 40px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0,0,0,.2);
     border-radius: 15px;
     background-color: #f8f8f8;
 }
 
 /* Header */
-header {
+/* .logo {
+    flex: 0 0 auto;
+    margin-right: 20px;
+} */
+
+.logo-link {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.logo-link,header div,header {
     display: flex;
+}
+
+header {
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
+    align-items: center;
+    width: 80%;
     padding: 2svh 5%;
     margin: 0 auto;
     background-color: #64c9d6;
     border-radius: 10px;
-    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.25);
-    gap: 2rem; /* adjusted for better spacing */
+    box-shadow: 0 2px 30px rgba(0,0,0,.25);
+    gap: 1rem; /* adjusted for better spacing */
 }
 
 header h1 {
     font-size: 2.25rem;
     text-align: center;
-    width: 100%;
+    width: auto;
+    margin: 0;
 }
 
 /* Navigation */
@@ -47,7 +62,7 @@ header nav {
 
 nav a {
     text-decoration: none;
-    color: rgb(230, 240, 240);
+    color: #e6f0f0;
     padding: 0 1rem;
     transition: color 0.2s ease, background-color 0.2s ease; /* combine transition properties */
 }
@@ -58,10 +73,15 @@ nav a:hover {
     border-radius: 10px;
 }
 
+h2 {
+    padding-top: 10px;
+    color: #437994;
+}
+
 /* Form Elements */
 input, 
 textarea {
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -81,7 +101,7 @@ button {
     border-radius: 5px;
     border: none;
     background-color: #228693;
-    color: white;
+    color: #fff;
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
@@ -98,6 +118,9 @@ footer {
     padding-top: 4rem;
 }
 
+
+
+
 /* Card Container */
 .card-container {
     display: flex;
@@ -112,13 +135,15 @@ footer {
     margin: 10px;
     width: 300px; /* fixed width for the card */
     text-align: center;
+
+    border: 10px dashed transparent; /* border-padding trick on cards */
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
     overflow: hidden; /* prevents overflow issues */
 }
 
 .card h3 {
-    color: rgb(16, 153, 187);
+    color: #1099bb;
 }
 
 .card-img, 
@@ -133,11 +158,12 @@ footer {
 }
 
 /* Main Content */
-.main_figure {
+.main-figure {
     width: 80%;
     max-width: 600px;
     margin: 0 auto;
     padding: 20px 0;
+    margin-bottom: 20px;
 }
 
 .agendamento {
@@ -161,11 +187,6 @@ footer {
     padding: 0 50px;
 }
 
-h2 {
-    padding-top: 10px;
-    color: #437994;
-}
-
 .agendamento-img {
     width: 80%;
     height: auto;
@@ -176,14 +197,23 @@ h2 {
     justify-content: center;
 }
 
+
+
+/* Texto Amarelo c/ wallpaper */
 .container-1-texto {
     padding-top: 2rem;
+    margin: 5.313rem 5svw 0 5svw;
     text-align: center;
-    background-color: darkblue;
-    color: yellow;
+    background-color: #00008b;
+    color: #ff0;
 
     border-radius: 10px;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 20px 30px rgba(0,0,0,.25);
+
+    background: linear-gradient(rgba(7,7,7,.8), rgba(54,54,54,.6)), url(https://img.freepik.com/free-photo/flat-lay-health-still-life-arrangement-with-copy-space_23-2148854064.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .container-1-texto h1 {
@@ -193,8 +223,11 @@ h2 {
 .container-1-texto p {
     text-align: justify;
     letter-spacing: .125rem;
-    padding: 0 3rem 2rem 3rem;
+    padding: 0 5rem 2rem 5rem;
 }
+
+
+
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
@@ -202,13 +235,16 @@ h2 {
         flex-direction: column;
         padding: 2rem;
         gap: 1rem;
+        align-items: center;
     }
     header h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        text-align: center;
     }
     nav {
         flex-direction: column;
         gap: 10px;
+        align-items: center;
     }
     
     .card-container {
@@ -223,7 +259,7 @@ h2 {
         justify-content: center;
     }
     header h1 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     nav {
         flex-direction: column;
