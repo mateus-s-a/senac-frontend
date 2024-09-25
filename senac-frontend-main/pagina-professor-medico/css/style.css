@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oxygen", sans-serif;
+}
+
+body {
+    padding: 10px 5%;
+    margin: 0 40px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.2);
+    border-radius: 15px;
+    background-color: #f8f8f8;
+}
+
+/* Header */
+.logo-link {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.logo-link,header div,header {
+    display: flex;
+}
+
+header {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 2svh 5%;
+    margin: 0 auto;
+    background-color: #64c9d6;
+    border-radius: 10px;
+    box-shadow: 0 2px 30px rgba(0,0,0,.25);
+    gap: 1rem; /* adjusted for better spacing */
+}
+
+header h1 {
+    font-size: 2.25rem;
+    text-align: center;
+    width: auto;
+    margin: 0;
+}
+
+/* Navigation */
+header nav {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.35em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e6f0f0;
+    padding: 0 1rem;
+
+    transition: color 0.25s ease, background-color 0.2s ease; /* combine transition properties */
+}
+
+nav a,nav a:hover {
+
+    border-radius: 10px;
+}
+
+nav a:hover {
+    color: #075061;
+    background-color: #b4dbe0;
+}
+
+h2 {
+    padding-top: 10px;
+    color: #437994;
+}
+
+/* Form Elements */
+input, 
+textarea {
+    background-color: #f5f5f5;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px;
+    border: 2px solid #2f566a;
+    resize: none;
+}
+
+button {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #228693;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #075061;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding-top: 4rem;
+}
+
+
+
+
+/* Card Container */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin: 20px 0; 
+    padding-top: 50px;
+}
+
+.card {
+    background: #fff;
+    margin: 10px;
+    width: 300px; /* fixed width for the card */
+    text-align: center;
+
+    border: 10px dashed transparent; /* border-padding trick on cards */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    overflow: hidden; /* prevents overflow issues */
+}
+
+.card h3 {
+    color: #1099bb;
+}
+
+.card-img, 
+.main-img {
+    border-radius: 10px;
+    max-width: 100%; /* set max-width for responsiveness */
+}
+
+.card-figcaption {
+    font-size: small;
+    padding-bottom: 15px;
+}
+
+
+
+
+/* Conteúdo Principal (MAIN) */
+.main-start-container {
+    /* border: 1px solid red; */
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-top: 2rem;
+}
+
+.main-start-container > div > h1 {
+    font-size: 60pt;
+    font-weight: lighter;
+
+    color: #437994;
+}
+
+.main-start-container > div > h2 {
+    font-size: 40pt;
+    font-weight: lighter;
+
+    color: #2a3a3d;
+}
+
+.main-figure {
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.transparencia {
+    border-radius: 20px;
+    /* background-color: hsla(0,0%,91%,.5); */
+    background-image: linear-gradient(45deg, hsl(195, 100%, 92%, 0.7), hsla(0, 0%, 91%, .5), hsla(0, 0%, 91%, .5));
+
+    padding: 1rem;
+}
+
+.agendamento-container {
+    padding-bottom: 20px;
+    border: 2px solid hsl(191, 87%, 40%);
+    border-radius: 20px;
+
+    background-color: rgba(213, 247, 248, 0.2);
+}
+
+.agendamento-titulo {
+    text-align: center;
+    margin: 15px 0 50px;
+}
+
+.agendamento-conteudo {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.agendamento-conteudo-item {
+    flex: 1 1 50%; 
+    padding: 0 50px;
+}
+
+.agendamento-img {
+    width: 80%;
+    height: auto;
+}
+
+.mb-3-item {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Texto Amarelo c/ wallpaper */
+.container-1-texto {
+    padding-top: 2rem;
+    margin: 5.313rem 5svw 0 5svw;
+    text-align: center;
+    background-color: #00008b;
+    color: #ff0;
+
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0,0,0,.25);
+
+    background: linear-gradient(rgba(7,7,7,.8), rgba(54,54,54,.6)), url(https://img.freepik.com/free-photo/flat-lay-health-still-life-arrangement-with-copy-space_23-2148854064.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container-1-texto h1 {
+    padding-bottom: 1rem;
+}
+
+.container-1-texto p {
+    text-align: justify;
+    letter-spacing: .125rem;
+    padding: 0 5rem 2rem 5rem;
+}
+
+
+
+
+/* Último Container */
+.container-4 {
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    
+    margin: 5rem auto;
+
+    background: linear-gradient(45deg, rgba(7,80,97,.5), hsla(0,0%,100%,.8)), url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNzNiYXRjaDE1LTIxNy0wMS5qcGc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    box-shadow: 0 20px 30px rgba(0,0,0,.25);
+    
+}
+
+.container-4 .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.3rem;
+}
+
+.col-md-6 {
+    flex: 1;
+    min-width: 300px;
+}
+
+.col-md-6:nth-of-type(1) {
+    font-size: 18pt;
+    letter-spacing: 0.05em;
+    padding: .8rem;
+
+    /* background-color: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(4px);
+    border-radius: 200px;
+    box-shadow: 0 20px 30px rgba(0,0,0,.05); */
+
+    h1 {
+        color: #d3f3ff;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        color: #2a3a3d;
+    }
+}
+
+.button-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.button-md-6 button {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    padding: 0 2rem 0 2rem;
+    margin-top: 2rem;
+    
+    font-size: 16pt;
+    background-color: #25d366;
+
+    transition: 0.4s ease;
+
+    a {
+        color: #ece5dd;
+        text-decoration: none;
+    }
+}
+
+.button-md-6 button:hover {
+    background-color: #ece5dd;
+
+    a {
+        color: #25d366;
+    }
+}
+
+.col-md-6:nth-of-type(2) {
+    margin: auto 0;
+    margin-left: 5rem;
+
+    width: 250%;
+}
+
+.col-md-6:nth-of-type(2) img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1rem;
+        align-items: center;
+    }
+    header h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .card-container {
+        justify-content: space-around; /* adjust for spacing when at fixed width */
+    }
+    .container-4 .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-md-6 {
+        margin-left: 0;
+        min-width: auto;
+        width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1rem;
+        gap: 1rem;
+        justify-content: center;
+    }
+    header h1 {
+        font-size: 1.25rem;
+    }
+    nav {
+        flex-direction: column;
+        font-size: 1em;
+        gap: 5px;
+    }
+
+    .col-md-6 {
+        font-size: 16pt;
+    }
+    .col-md-6 button {
+        width: 100%;
+    }
+}
