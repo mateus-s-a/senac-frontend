@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnergyCo</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Colors -->
+    <style>
+        :root {
+            --primary-color: #fdd835; /* Yellow */
+            --secondary-color: #1e88e5; /* Blue */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: var(--secondary-color);">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">EnergyCo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                    <!-- Language Switch Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Language
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Spanish</a></li>
+                            <li><a class="dropdown-item" href="#">Portuguese (BR)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header class="text-center p-5" style="background-color: var(--primary-color); color: var(--secondary-color);">
+        <h1>Powering a Brighter Tomorrow</h1>
+        <p>Reliable energy solutions for a sustainable future.</p>
+        <a href="#services" class="btn btn-outline-light">Our Services</a>
+    </header>
+
+    <!-- Services Section with Carousel -->
+    <section id="services" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color: var(--secondary-color);">Our Services</h2>
+            <div id="serviceCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" style="color: var(--secondary-color);">Residential Services</h5>
+                                <p class="card-text">Efficient and reliable power solutions for your home.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" style="color: var(--secondary-color);">Commercial Solutions</h5>
+                                <p class="card-text">Powering businesses with sustainable energy solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" style="color: var(--secondary-color);">Renewable Energy</h5>
+                                <p class="card-text">Harnessing the power of nature for a cleaner tomorrow.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="p-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color: var(--secondary-color);">Our Products</h2>
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow">
+                        <div class="card-img-top" style="height: 270px; overflow: hidden;">
+                            <img src="https://i0.wp.com/pipingtechs.com/wp-content/uploads/2024/02/1-4.png" class="card-img-top" alt="Product 1">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Solar Panel X100</h5>
+                            <p class="card-text">High-efficiency solar panels for residential use.</p>
+                            <p><strong>Price:</strong> $299.99</p>
+                            <p><strong>Delivery Time</strong> 2-4 Weeks</p>
+                            <p><strong>Reviews:</strong> ⭐⭐⭐⭐☆</p>
+                            <a href="#" class="btn btn-primary" style="background-color: var(--secondary-color);">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow">
+                        <div class="card-img-top" style="height: 270px; overflow: hidden;">
+                            <img src="https://www.offshorewind.biz/wp-content/uploads/sites/2/2023/11/Mingyang-Smart-Energy-.png" class="card-img-top" alt="Product 2">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Wind Turbine Pro</h5>
+                            <p class="card-text">Compact wind turbine designed for small-scale energy production.</p>
+                            <p><strong>Price:</strong> $599.99</p>
+                            <p><strong>Delivery Time</strong> 3-5 Weeks</p>
+                            <p><strong>Reviews:</strong> ⭐⭐⭐⭐⭐</p>
+                            <a href="#" class="btn btn-primary" style="background-color: var(--secondary-color);">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow">
+                        <div class="card-img-top" style="height: 270px; overflow: hidden;">
+                            <img src="https://cleangridalliance.org/_uploads/blog/_source/Social_Media_Graphics__27_.png" class="card-img-top" alt="Product 3">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Battery Storage Unit</h5>
+                            <p class="card-text">Efficient energy storage for homes and small businesses.</p>
+                            <p><strong>Price:</strong> $799.99</p>
+                            <p><strong>Delivery Time</strong> 4-6 Weeks</p>
+                            <p><strong>Reviews:</strong> ⭐⭐⭐⭐☆</p>
+                            <a href="#" class="btn btn-primary" style="background-color: var(--secondary-color);">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="p-5 text-center" style="background-color: var(--secondary-color); color: white;">
+        <div class="container">
+            <h2>About EnergyCo</h2>
+            <p>EnergyCo is committed to providing sustainable and innovative energy solutions. Our team of experts
+                works tirelessly to deliver efficient and eco-friendly power systems to residential, commercial, and
+                industrial clients.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section with Video -->
+    <section id="contact" class="p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h2>Contact Us</h2>
+                    <p>Get in touch to learn more about our services or to receive a personalized energy consultation.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="background-color: var(--secondary-color);">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/oNB5rzAbAZo" title="EnergyCo Introduction Video" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center p-3" style="background-color: var(--secondary-color); color: #fff;">
+        <p>&copy; 2024 EnergyCo | <a href="#" class="text-white">Privacy Policy</a></p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle CDN (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
