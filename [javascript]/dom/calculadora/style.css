@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    pad: 0;
+    box-sizing: border-box;
+
+    font-family: monospace;
+}
+
+.container-calc {
+    border: 1px solid red;
+}
+
+.box-res {
+    margin: .25rem;
+}
+
+.row-1, .row-2, .row-3 {
+    margin: .5rem;
+}
