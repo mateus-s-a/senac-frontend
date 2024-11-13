@@ -1,0 +1,61 @@
+/* Estilo básico */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222;
+    color: white;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+}
+
+/* Menu */
+#menu {
+    text-align: center;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+/* Tela de Jogo */
+canvas {
+    display: block;
+    margin-top: 20px;
+}
+
+/* Opções e Créditos */
+.hidden {
+    display: none;
+}
+
+#options, #credits {
+    text-align: center;
+}
+
+/* Tema Claro */
+body.light-theme {
+    background-color: #f0f0f0;
+    color: #222;
+}
+
+button.light-theme {
+    background-color: #ddd;
+    color: #222;
+}
+
+button.light-theme:hover {
+    background-color: #ccc;
+}

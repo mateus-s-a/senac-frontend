@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong - Jogo em JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu">
+        <h1 id="game-title">Pong</h1>
+        <button id="start-btn">Iniciar Jogo</button>
+        <button id="options-btn">Opções</button>
+        <button id="credits-btn">Créditos</button>
+    </div>
+
+    <div id="options" class="hidden">
+        <h2>Opções</h2>
+        <button id="theme-toggle">Alterar Tema</button>
+        <button id="back-btn">Voltar</button>
+    </div>
+
+    <div id="credits" class="hidden">
+        <h2>Créditos</h2>
+        <p>Jogo desenvolvido por:</p>
+        <ul>
+            <li>Nome do desenvolvedor 1</li>
+            <li>Nome do desenvolvedor 2</li>
+        </ul>
+        <button id="back-credits-btn">Voltar</button>
+    </div>
+
+    <canvas id="pong" width="800" height="600" class="hidden"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
