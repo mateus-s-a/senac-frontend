@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main-container">
+        <div class="title">
+            <h1>Calculadora</h1>
+        </div>
+        <div class="input-container">
+            <div class="input-1">
+                <input type="text" id="input_1" placeholder="0">
+            </div>
+            <div class="operadores">
+                <select id="select_operadores">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">×</option>
+                    <option value="/">÷</option>
+                </select>
+            </div>
+            <div class="input-2">
+                <input type="text" id="input_2" placeholder="0">
+            </div>
+        </div>
+        <div class="resultado-container">
+            <button type="button" id="btn_resposta">=</button>
+            <h1 id="resultado">0</h1>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
