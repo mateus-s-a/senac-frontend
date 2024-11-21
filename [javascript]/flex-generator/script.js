@@ -1,4 +1,8 @@
+const MAX_BOXES = 6;
+
+const addBoxButton = document.getElementById("add-box");
 const alignItemsSelect = document.getElementById("align-items-select");
+const boxColors = ['#FF0000', '#008000', '#0000FF', '#FFFF00', '#00FFFF', '#800080'];
 const canvas = document.getElementById("canvas");
 const copyCssButton = document.getElementById("copy-css");
 const copyHtmlButton = document.getElementById("copy-html");
@@ -15,7 +19,40 @@ const saveSnippetButton = document.getElementById("save-snippet");
 const snippetsList = document.getElementById("snippets-list");
 const toggleGrid = document.getElementById("toggle-grid");
 
+// const boxes = canvas.querySelectorAll(".box");
 
+
+
+function addBox() {
+    const canvas = document.getElementById("canvas");
+    const bxs = document.querySelectorAll(".box");
+
+    if (bxs.length >= MAX_BOXES) {
+        showMessage("Limite máximo de blocos atingido!");
+        return;
+    }
+
+    const nextNumber = bxs.length + 1;
+    console.log(nextNumber);
+    console.log(typeof(nextNumber));
+
+    const newBox = document.createElement("div");
+    newBox.classList.add("box", "fade-in");
+    newBox.style.backgroundColor = boxColors[(nextNumber - 1) % boxColors.length];
+    newBox.textContent = nextNumber;
+
+    const closeButton = document.createElement("span");
+    closeButton.textContent = "×";
+    closeButton.classList.add("close-button");
+    newBox.appendChild(closeButton);
+
+    canvas.appendChild(newBox);
+    
+    setTimeout(() => {
+        newBox.classList.remove("fade-in");
+    }, 500);
+
+}
 
 function copyToClipboard(text) {
     navigator.clipboard.writeText(text).then(() => {
@@ -23,6 +60,33 @@ function copyToClipboard(text) {
     }).catch((err) => {
         console.error("Erro ao copiar texto: ", err);
     });
+}
+
+function removeBox(event) {
+    const box = event.target.parentElement;
+
+    box.classList.add("fade-out");
+
+    setTimeout(() => {
+        canvas.removeChild(box);
+        updateBoxes();
+    }, 500);
+}
+
+function showMessage(message) {
+    let messageBox = document.getElementById("messa-box");
+    if (!messageBox) {
+        messageBox = document.createElement("div");
+        messageBox.id = "message-box";
+        document.body.appendChild(messageBox);
+    }
+
+    messageBox.textContent = message;
+    messageBox.style.display = "block";
+
+    setTimeout(() => {
+        messageBox.style.display = "none";
+    }, 3000);
 }
 
 function toggleFlexControls() {
@@ -45,6 +109,21 @@ function toggleGridControls() {
         canvas.style.gridTemplateRows = "";
     }
     updateDisplay();
+}
+
+function updateBoxes() {
+    const bxs = document.querySelectorAll(".box");
+    bxs.forEach((box, index) => {
+        const newNumber = index + 1;
+        console.log(index);
+        box.textContent = newNumber;
+        box.style.backgroundColor = boxColors[(newNumber - 1) % boxColors.length];
+
+        const closeButton = document.createElement("span");
+        closeButton.textContent = "×";
+        closeButton.classList.add("close-button");
+        box.appendChild(closeButton);
+    });
 }
 
 function updateDisplay() {
@@ -104,6 +183,15 @@ function updateGridProperties() {
 
 
 
+
+document.addEventListener("click", (event) => {
+    if (event.target.classList.contains("close-button")) {
+        removeBox(event);
+    }
+})
+
+
+addBoxButton.addEventListener("click", addBox);
 
 
 copyCssButton.addEventListener("click", () => {

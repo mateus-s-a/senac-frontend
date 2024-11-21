@@ -1,3 +1,13 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #f4f4f4;
+    --dark-color: #282c34;
+    --light-color: #ffffff;
+    --hover-color: #0056b3;
+}
+
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -6,8 +16,8 @@ body {
 }
 
 header {
-    background-color: #282c34;
-    color: white;
+    background-color: var(--dark-color);
+    color: var(--light-color);
     text-align: center;
     padding: 1rem;
 }
@@ -19,15 +29,40 @@ h2 {
 
 
 .box {
-    width: 100px;
-    height: 100px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: #fff;
-    font-weight: bold;
-    border: 1px solid #ccc;
+    justify-content: center;
     font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--light-color);
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    transition: opacity 0.5s ease;
+}
+.box.fade-in {
+    opacity: 1;
+}
+.box.fade-out {
+    opacity: 0;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 50%;
+    padding: 2px 6px;
+    transition: background-color .3s ease;
+}
+.close-button:hover {
+    background-color: rgba(255, 0, 0, .8);
 }
 
 .grid-active {
@@ -42,8 +77,8 @@ h2 {
         linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
     background-size: 51px 51px;
     background-position: top left;
-    z-index: 1;
     pointer-events: none;
+    z-index: 1;
 }
 
 
@@ -70,24 +105,39 @@ h2 {
     background-color: #0056b3;
 }
 
+#add-box {
+    background-color: #006400;
+    color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color .3s ease;
+}
+#add-box:hover {
+    background-color: #008000;
+}
+
 #box1 {
-    background-color: #f00;
+    background-color: #FF0000;
 }
 
 #box2 {
-    background-color: #0f0;
+    background-color: #008000;
 }
 
 #box3 {
-    background-color: #00f;
+    background-color: #0000FF;
 }
 
 #canvas {
+    /* width: 80%; */
     width: 800px;
     height: 400px;
     display: flex;
     margin: 20px auto;
-    background-color: #f1f1f1;
+    background-color: var(--secondary-color);
     border: 1px solid #ddd;
     position: relative;
     justify-content: center;
@@ -134,7 +184,7 @@ h2 {
     border-bottom: 1px solid #ddd;
     margin-bottom: 20px;
     text-align: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 #controls label {
@@ -228,6 +278,20 @@ h2 {
 #html-code h3 {
     margin-top: 0;
     color: #007bff;
+}
+
+#message-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ffcc00;
+    color: #000;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+    z-index: 1000;
+    display: none;
 }
 
 #saved-snippets {

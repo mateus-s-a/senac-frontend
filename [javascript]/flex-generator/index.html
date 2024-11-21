@@ -8,6 +8,7 @@
 </head>
 <body>
     
+    <!-- Cabeçalho -->
     <header>
         <h1 style="display: flex; flex-direction: column;">
             CSS - Display Viewer
@@ -17,28 +18,39 @@
 
     <main>
         <section id="controls">
-            <label for="display-select">Display:</label>
-            <select id="display-select">
-                <option value="block">block</option>
-                <option value="flex" selected>flex</option>
-                <option value="grid">grid</option>
-                <option value="inline-block">inline-block</option>
-                <option value="none">none</option>
-            </select>
+            <div>
+                <label for="display-select">Display:</label>
+                <select id="display-select">
+                    <option value="block">block</option>
+                    <option value="flex" selected>flex</option>
+                    <option value="grid">grid</option>
+                    <option value="inline-block">inline-block</option>
+                    <option value="none">none</option>
+                </select>
+            </div>
 
-            <label for="direction-select">Direction:</label>
-            <select id="direction-select">
-                <option value="row">row</option>
-                <option value="row-reverse">row-reverse</option>
-                <option value="column">column</option>
-                <option value="column-reverse">column-reverse</option>
-            </select>
+            <div>
+                <label for="direction-select">Direction:</label>
+                <select id="direction-select">
+                    <option value="row">row</option>
+                    <option value="row-reverse">row-reverse</option>
+                    <option value="column">column</option>
+                    <option value="column-reverse">column-reverse</option>
+                </select>
+            </div>
 
-            <label>
-                <input type="checkbox" id="toggle-grid"> Show Grid
-            </label>
+            <div>
+                <label>
+                    <input type="checkbox" id="toggle-grid"> Show Grid
+                </label>
+            </div>
+
+            <div>
+                <button id="add-box">Add Box</button>
+            </div>
         </section>
 
+        <!-- Controles de Flex -->
         <div id="flex-controls" style="display: none;">
             <label for="justify-content-select">Justify Content:</label>
             <select id="justify-content-select">
@@ -60,6 +72,7 @@
             </select>
         </div>
 
+        <!-- Controles de Grid -->
         <div id="grid-controls" style="display: none;">
             <label for="grid-columns">Grid Columns:</label>
             <input type="text" id="grid-columns" placeholder="Ex: 100px 1fr 2fr">
@@ -68,7 +81,7 @@
             <input type="text" id="grid-rows" placeholder="Ex: 50px auto">
         </div>
         
-
+        <!-- Canvas -->
         <section id="canvas">
             <div class="box" id="box1">1</div>
             <div class="box" id="box2">2</div>
@@ -86,11 +99,15 @@
             </div>
 
         </section>
+
+        <!-- Ações -->
         <div id="actions">
             <button id="save-snippet">Save Config.</button>
             <button id="copy-css">Copy CSS</button>
             <button id="copy-html">Copy HTML</button>
         </div>
+
+        <!-- Configurações Salvas -->
         <div id="saved-snippets">
             <h2>Saved Config.:</h2>
             <ul id="snippets-list"></ul>
@@ -98,6 +115,7 @@
 
     </main>
     
+    <!-- Rodapé -->
     <section id="footer">
         <footer>
             Made by <span style="font-weight: bold;">Mateus "Spacery" S. A.</span>
