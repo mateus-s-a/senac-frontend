@@ -202,7 +202,7 @@ copyCssButton.addEventListener("click", () => {
 
 copyHtmlButton.addEventListener("click", () => {
     const htmlCodeText = `
-<section id="canvas">
+<section id="container">
     <div class="box" id="box1">1</div>
     <div class="box" id="box2">2</div>
     <div class="box" id="box3">3</div>
@@ -215,7 +215,7 @@ directionSelect.addEventListener("change", () => {
     const direction = directionSelect.value;
     canvas.style.flexDirection = direction;
 
-    cssCode.textContent = `#canvas {
+    cssCode.textContent = `#container {
     display: flex;
     flex-direction: ${direction};
 }`;
