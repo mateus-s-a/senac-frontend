@@ -135,7 +135,7 @@ function updateDisplay() {
 
     canvas.style.display = displayValue;
 
-    cssCode.textContent = `#canvas {
+    cssCode.textContent = `#container {
     display: ${displayValue};
     justify-content: ${justifyContent};
     align-items: ${alignItems};
@@ -144,7 +144,7 @@ function updateDisplay() {
 }`;
 
     htmlCode.textContent = `
-<section id="canvas">
+<section id="container">
     <div class="box" id="box1">1</div>
     <div class="box" id="box2">2</div>
     <div class="box" id="box3">3</div>
@@ -156,7 +156,7 @@ function updateFlexProperties() {
         canvas.style.justifyContent = justifyContentSelect.value;
         canvas.style.alignItems = alignItemsSelect.value;
 
-        cssCode.textContent = `#canvas {
+        cssCode.textContent = `#container {
     display: flex;
     justify-content: ${justifyContentSelect.value};
     align-items: ${alignItemsSelect.value};
@@ -172,7 +172,7 @@ function updateGridProperties() {
         canvas.style.gridTemplateColumns = columns || "auto";
         canvas.style.gridTemplateRows = rows || "auto";
 
-        cssCode.textContent = `#canvas {
+        cssCode.textContent = `#container {
     display: grid;
     grid-template-columns: ${columns || "auto"};
     grid-template-rows: ${rows || "auto"};
