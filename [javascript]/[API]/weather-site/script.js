@@ -9,7 +9,7 @@ document.getElementById("search").addEventListener("click", () => {
             if (data.current) {
                 document.getElementById("weather-info").innerHTML = `
                     <h2>${data.location.name}</h2>
-                    <p>Temperatura: ${data.current.temperature} °C</p>
+                    <p>Temperatura: ${data.current.temperature}°C</p>
                     <p>Condições: ${data.current.weather_descriptions[0]}</p>
                     <p>Vento: ${data.current.wind_speed} km/h</p>
                 `;
