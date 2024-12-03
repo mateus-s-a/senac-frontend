@@ -145,3 +145,42 @@ body {
     font-weight: bold;
     cursor: pointer
 }
+
+
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+    margin-top: 2rem;
+}
+.footer-logo {
+    max-width: 125px;
+    margin-bottom: 1rem;
+}
+.footer-title {
+    color: #2c6e49;
+    font-weight: bold;
+}
+.footer-links a {
+    color: #6c757d;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+.footer-links a:hover {
+    color: #2c6e49;
+}
+.footer-social a {
+    color: #6c757d;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.footer-social a:hover {
+    color: #2c6e49;
+}
+.footer-bottom {
+    border-top: 1px solid #dee2e6;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
