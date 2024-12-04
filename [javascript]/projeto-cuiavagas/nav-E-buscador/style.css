@@ -187,3 +187,13 @@ body {
     padding-top: 1.5rem;
     margin-top: 1.5rem;
 }
+
+.footer-team {
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Linha sutil acima da seção */
+    padding-top: 10px; /* Espaçamento acima */
+}
+
+.footer-team p {
+    margin: 0; /* Remove margens padrões */
+    font-size: 14px; /* Tamanho de fonte menor para manter o minimalismo */
+}
