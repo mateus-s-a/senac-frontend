@@ -14,52 +14,51 @@
 
 <body>
     <main id="inicio">
-        <nav class="navbar navbar-dark navbar-expand-lg" aria-label="Main navigation">
-            <div class="container-fluid d-flex align-items-center">
-                <div class="d-flex gap-5">
-                    <!-- Logo Section -->
-                    <div id="div-title-logo" class="d-flex align-items-center">
-                        <img id="title-logo" src="img/Leonardo_Phoenix_Design_a_clean_and_modern_logo_for_a_job_site_3.png" alt="Logo" width="125" height="125" class="d-inline-block align-text-top">
-                    </div>
-            
-                    <!-- Hamburger Menu Button (visible only on small screens) -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-            
-                    <!-- Navigation Links (Collapsible) -->
-                    <div class="collapse navbar-collapse mx-auto" id="navbarNavDropdown">
-                        <ul class="navbar-nav d-flex justify-content-center gap-2">
-                            <li class="nav-item fs-4">
-                                <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
-                            </li>
-                            <li class="nav-item fs-4">
-                                <a class="nav-link" href="#empregos">Empregos</a>
-                            </li>
-                            <li class="nav-item fs-4">
-                                <a class="nav-link" href="#">Sobre Nós</a>
-                            </li>
-                            <li class="nav-item fs-4">
-                                <a class="nav-link" href="#">Contato</a>
-                            </li>
-                        </ul>
-                    </div>
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+            <div class="container-fluid">
+                <!-- Logo (Left Side) -->
+                <div class="d-flex align-items-center">
+                    <a href="#" class="navbar-brand d-flex align-items-center">
+                        <img src="img/Leonardo_Phoenix_Design_a_clean_and_modern_logo_for_a_job_site_3.png"
+                            id="title-logo" class="d-inline-block align-text-top" width="125" height="125"
+                            alt="Cuiavagas Logo">
+                    </a>
+                </div>
 
+                <!-- Navbar Toggle Button (for small screens) -->
+                <button class="navbar-toggler text-success bg-warning" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation Links (Centered) -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav h5">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link text-warning active" aria-current="page">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#empregos" class="nav-link text-warning text-opacity-75">Empregos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-warning text-opacity-75">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-warning text-opacity-75">Contato</a>
+                        </li>
+                    </ul>
                 </div>
-        
-                <!-- Cuiavagas Title for Large Screens -->
-                <div class="navbar-brand home-title fs-0 fw-bold d-none d-lg-block ms-auto">
-                    Cuiavagas
-                </div>
-        
-                <!-- Cuiavagas Title for Mobile (hidden on large screens) -->
-                <div class="navbar-brand home-title fs-1 fw-bold d-lg-none ms-auto">
-                    Cuiavagas
+
+                <!-- Site Title (Right Side) -->
+                <div class="navbar-brand ms-auto">
+                    <span class="home-title fw-bold d-none d-lg-block">Cuiavagas</span>
+                    <span class="home-title fw-bold d-lg-none">Cuiavagas</span>
                 </div>
             </div>
         </nav>
-        
-        
+
+
 
         <div class="page-wrapper">
             <!-- Seção de Busca -->
@@ -92,7 +91,9 @@
                                 <div class="col-md-4 mb-3">
                                     <div class="card h-100 shadow-sm job-card" data-job="dev">
                                         <div class="card-body text-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="mb-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" class="mb-3">
                                                 <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                                                 <line x1="3" y1="9" x2="21" y2="9"></line>
                                                 <line x1="9" y1="21" x2="9" y2="9"></line>
@@ -108,7 +109,9 @@
                                 <div class="col-md-4 mb-3">
                                     <div class="card h-100 shadow-sm job-card" data-job="marketing">
                                         <div class="card-body text-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="mb-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" class="mb-3">
                                                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                                                 <polyline points="9 22 9 12 15 12 15 22"></polyline>
                                             </svg>
@@ -123,8 +126,12 @@
                                 <div class="col-md-4 mb-3">
                                     <div class="card h-100 shadow-sm job-card" data-job="support">
                                         <div class="card-body text-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="mb-3">
-                                                <path d="M15.05 5A5 5 0 0 1 19 10.5h1a3.5 3.5 0 0 1 3.5 3.5v2a3.5 3.5 0 0 1-3.5 3.5h-7.5v-3h5a1.5 1.5 0 1 0 0-3h-6.5v-3h6a1.5 1.5 0 1 0 0-3h-5a3.5 3.5 0 0 0-3.47 3h-1.53a5 5 0 0 1 5-5z"></path>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" class="mb-3">
+                                                <path
+                                                    d="M15.05 5A5 5 0 0 1 19 10.5h1a3.5 3.5 0 0 1 3.5 3.5v2a3.5 3.5 0 0 1-3.5 3.5h-7.5v-3h5a1.5 1.5 0 1 0 0-3h-6.5v-3h6a1.5 1.5 0 1 0 0-3h-5a3.5 3.5 0 0 0-3.47 3h-1.53a5 5 0 0 1 5-5z">
+                                                </path>
                                             </svg>
                                             <h5 class="card-title mb-3">Suporte Técnico</h5>
                                             <p class="card-text">
@@ -155,7 +162,7 @@
                 <div class="row">
                     <div class="col-md-4 mb-4">
                         <img src="img/cuiavagas-logo.png" alt="Cuiavagas Logo" class="footer-logo">
-                        <h3 class="footer-title">Cuiavagas</h3>
+                        <h3 class="footer-title"><span style="font-family: Sour Gummy, sans-serif;">Cuiavagas</span></h3>
                         <p class="text-muted">Encontre seu próximo emprego com facilidade.</p>
                     </div>
                     <div class="col-md-4 mb-4">
@@ -171,22 +178,29 @@
                         <h5 class="footer-title">Conecte-se</h5>
                         <div class="footer-social">
                             <a href="#" aria-label="Facebook">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                                 </svg>
                             </a>
                             <a href="#" aria-label="LinkedIn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                                    <rect x="2" y="9" width="4" height="12"/>
-                                    <circle cx="4" cy="4" r="2"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect x="2" y="9" width="4" height="12" />
+                                    <circle cx="4" cy="4" r="2" />
                                 </svg>
                             </a>
                             <a href="#" aria-label="Instagram">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
                                 </svg>
                             </a>
                         </div>
@@ -201,7 +215,9 @@
         </footer>
 
         <!-- Bootstrap JS -->
-        <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz' crossorigin='anonymous'></script>
+        <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'
+            integrity='sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz'
+            crossorigin='anonymous'></script>
 
         <script src="script.js"></script>
 
