@@ -88,3 +88,4 @@ document.querySelectorAll('.job-card').forEach(card => {
         };
     });
 });
+

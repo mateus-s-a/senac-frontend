@@ -16,39 +16,22 @@
     <main id="inicio">
         <nav class="navbar navbar-expand-lg navbar-light py-3">
             <div class="container-fluid">
-                <!-- Logo (Left Side) -->
                 <div class="d-flex align-items-center">
                     <a href="#" class="navbar-brand d-flex align-items-center">
-                        <img src="img/Leonardo_Phoenix_Design_a_clean_and_modern_logo_for_a_job_site_3.png" id="title-logo" class="d-inline-block align-text-top" width="125" height="125" alt="Cuiavagas Logo" draggable="false">
+                        <img src="../img/Leonardo_Phoenix_Design_a_clean_and_modern_logo_for_a_job_site_3.png" id="title-logo" class="d-inline-block align-text-top" width="125" height="125" alt="Cuiavagas Logo" draggable="false">
                     </a>
                 </div>
-
-                <!-- Navbar Toggle Button (for small screens) -->
-                <button class="navbar-toggler text-success bg-warning" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler text-success bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <!-- Navigation Links (Centered) -->
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                     <ul class="navbar-nav h5">
-                        <li class="nav-item">
-                            <a href="#home" class="nav-link" aria-current="page">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#empregos" class="nav-link">Empregos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Sobre Nós</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Contato</a>
-                        </li>
+                        <li class="nav-item"><a href="#home" class="nav-link" aria-current="page">Início</a></li>
+                        <li class="nav-item"><a href="#empregos" class="nav-link">Empregos</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Sobre Nós</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
                     </ul>
                 </div>
-
-                <!-- Site Title (Right Side) -->
                 <div class="navbar-brand ms-auto">
                     <span class="home-title fw-bold d-none d-lg-block">Cuiavagas</span>
                     <span class="home-title fw-bold d-lg-none">Cuiavagas</span>
@@ -143,7 +126,6 @@
                     </div>
                 </div>
             </section>
-
         </div>
 
         <!-- Modal de Detalhes da Vaga -->
@@ -153,6 +135,64 @@
                 <div id='jobModalDetails'></div>
             </div>
         </div>
+
+        <!-- Sobre Nós -->
+        <section id="sobre-nos" class="about-us-section py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="about-us-image-container position-relative">
+                            <div class="gradient-overlay"></div>
+                            <img src="../img/cuiavagas-team.jpg" alt="Cuiavagas Team" class="img-fluid rounded-4 about-us-image shadow-lg">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-us-content p-4 rounded-4" style="background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(240,248,255,0.85) 100%);">
+                            <h2 class="mb-4" style="color: var(--primary-green); font-family: 'Sour Gummy', sans-serif;">Sobre a Cuiavagas</h2>
+                            <p class="text-muted mb-3">
+                                Nascemos da visão de conectar talentos locais com as melhores oportunidades profissionais em Mato Grosso. Nossa plataforma não é apenas um site de vagas, mas um ecossistema de desenvolvimento de carreiras.
+                            </p>
+                            <div class="mission-values">
+                                <div class="mission-card mb-3 p-3 rounded-3 shadow-sm" style="background-color: rgba(44, 110, 73, 0.05);">
+                                    <h5 class="mb-2" style="color: var(--primary-green);">Nossa Missão</h5>
+                                    <p class="text-muted">
+                                        Empoderar profissionais e estudantes, facilitando conexões significativas entre talentos e empresas no mercado de Mato Grosso.
+                                    </p>
+                                </div>
+                                <div class="values-grid row g-3">
+                                    <div class="col-md-4">
+                                        <div class="value-item text-center p-3 rounded-3 h-100" style="background-color: rgba(233, 187, 19, 0.05);">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--primary-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-2">
+                                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                            </svg>
+                                            <h6 class="mb-1" style="color: var(--dark-green);">Integridade</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="value-item text-center p-3 rounded-3 h-100" style="background-color: rgba(44, 110, 73, 0.05);">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--primary-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-2">
+                                                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.5a2 2 0 0 0 2-1.5l2-7.5a2 2 0 0 0-2-2.5h-4.5z"/>
+                                            </svg>
+                                            <h6 class="mb-1" style="color: var(--dark-green);">Confiança</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="value-item text-center p-3 rounded-3 h-100" style="background-color: rgba(233, 187, 19, 0.05);">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--primary-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-2">
+                                                <circle cx="12" cy="12" r="10"/>
+                                                <line x1="12" y1="16" x2="12" y2="12"/>
+                                                <line x1="12" y1="8" x2="12.01" y2="8"/>
+                                            </svg>
+                                            <h6 class="mb-1" style="color: var(--dark-green);">Transparência</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <footer class="footer">
             <div class="container">
@@ -208,8 +248,23 @@
                 <!-- Nova seção para a equipe -->
                 <div class="row footer-team mt-3">
                     <div class="col-12 text-center">
-                        <p class="text-muted mb-0">Desenvolvido por: Wagner (Professor), André Martins, Brenno Cauã, Daniel Bassog, Hamilton, João Lucas, Italou, Mateus de Souza, Wesley Ferraz.</p>
-                        <p class="text-muted mb-0">Sesc Arsenal (SENAC) — Mato Grosso</p>
+                        <p class="text-muted mb-1">
+                            <span class="fw-bold text-success" style="font-family: 'Sour Gummy', sans-serif; font-size: 1.1em;">
+                                Prof. Wagner
+                            </span>
+                            <span class="text-muted" style="font-size: 0.9em; opacity: 0.7;">
+                                • Orientação e Coordenação
+                            </span>
+                        </p>
+                        <p class="text-muted mb-1" style="font-size: 0.8em; color: #6c757d !important;">
+                            Desenvolvido por:
+                            André Martins • Brenno Cauã • Daniel Bassalobre 
+                            • Hamilton SBCY • João Lucas • Italou 
+                            • Mateus de Souza • Samuel Felipe • Wesley Ferraz
+                        </p>
+                        <p class="text-muted mb-0" style="font-style: italic; font-size: 0.75em; color: #adb5bd !important;">
+                            Sesc Arsenal (SENAC) — Mato Grosso
+                        </p>
                     </div>
                 </div>
         
